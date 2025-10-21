@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <center> <h1>Lanchonete do Seu Zé</h1>
+    <hr>
+    <br>
+    <h3>Monte seu lanche</h3>
+    </center>
+
+    <form action=""method="">
+        <p>
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome"placeholder="insira seu nome" required />
+        </p>
+        <p>
+            <label for="datanasc">Data de Nascimento</label>
+            <input id="datanasc" type="date" />
+        </p>
+        <p>
+            <label for="indica">Você nos indicaria?</label>
+            <input id="indica" type="number" min="1" max="5" />
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Insira seu email" required />
+        </p>
+        <p>
+            <label for="cor">Cor Favorita</label>
+            <input id="cor" type="color" />
+        </p>
+        <p>
+            <label for="volume">Em qual volume você ouve música? (0 a 100)</label>
+            <input id="volume" type="range" min="0" max="100" volume="50" oninput="valorVolume.textContent = this.value" />
+            <spam id="valorVolume">50</spam>
+
+            <style>
+                #volume {
+
+                    accent-color: rgba(0, 255, 234, 0.732);
+                }
+            </style>
+        </p>
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" id="masc" name="genero" />
+            <label for="masc">Masculino</label>
+            <br>
+            <input type="radio" id="fem" name="genero" />
+            <label for="fem">Feminino</label>
+            <br>
+            <input type="radio" id="outros" name="genero" />
+            <label for="outros">Outros</label>
+
+            <style>
+                #masc {
+                    accent-color: rgb(147, 8, 8);
+                }
+
+                #fem {
+                    accent-color: rgb(130, 9, 167);
+                }
+
+                #outros {
+                    accent-color: rgb(98, 150, 2);
+                }
+            </style>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Monte seu Lanche</legend>
+            <input type="checkbox" id="salada" />
+            <label for="salada">Salada</label>
+            <br>
+            <input type="checkbox" id="hamb" />
+            <label for="hamb">Hamburger</label>
+            <br>
+            <input type="checkbox" id="tom" />
+            <label for="tom">Tomate</label>
+            <br>
+            <input type="checkbox" id="queijo" />
+            <label for="queijo">Queijo</label>
+            <br>
+            <input type="checkbox" id="ovo" />
+            <label for="ovo">Ovo</label>
+            <br>
+            <input type="checkbox" id="Pres" />
+            <label for="Pres">Presunto</label>
+            <br>
+            <input type="checkbox" id="calab" />
+            <label for="calab">Calabresa</label>
+            <br>
+            <input type="checkbox" id="fran" />
+            <label for="fran">Frango</label>
+            <br>
+            <input type="checkbox" id="Maio>" />
+            <label for="Maio">Maionese</label>
+            <br>
+            <input type="checkbox" id="maioVerde" />
+            <label for="maioVerde">Maionese Verde</label>
+            <br>
+            <input type="checkbox" id="ket" />
+            <label for="ket">Ketchup</label>
+            <br>
+            <input type="checkbox" id="most" />
+            <label for="most">Mostarda</label>
+            <br>
+            <input type="checkbox" id="catp" />
+            <label for="catp">Catupiry</label>
+            <br>
+
+            <style>
+                #salada {
+                    accent-color: rgb(10, 224, 10);
+                }
+
+                #hamb {
+                    accent-color: rgb(104, 20, 20);
+                }
+
+                #tom {
+                    accent-color: red;
+                }
+                
+                #queijo {
+                    accent-color: yellow;
+                }
+
+                #ovo {
+                    accent-color: white;
+                }
+
+                #Pres {
+                    accent-color: rgb(246, 154, 169);
+                }
+
+                #calab {
+                    accent-color: rgb(154, 63, 63);
+                }
+
+                #fran {
+                    accent-color: orange;
+                }
+
+                #Maio {
+                    accent-color: rgb(221, 221, 174);
+                }
+
+                #maioVerde {
+                    accent-color: rgb(134, 212, 134);
+                }
+
+                #ket {
+                    accent-color: rgb(166, 0, 0);
+                }
+
+                #most {
+                    accent-color: rgb(233, 255, 36);
+                }
+
+                #catp {
+                    accent-color: rgb(246, 247, 207);
+                }
+            </style>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Bebidas</legend>
+            <input type="radio" id="suco" name="bebidas" />
+            <label for="suco">Suco</label>
+            <br>          
+            <img src="Suco.png" width="100" height="100">
+            <br>
+            <input type="radio" id="refri" name="bebidas" />
+            <label for="red">Refrigerantes</label>
+            <br>
+            <img src="refrigerantes.jpg" width="100" height="100">
+            <br>
+            <input type="radio" id="cerv" name="bebidas" />
+            <label for="cerv">Cervejas</label>
+            <br>
+            <img src="cervejas.jpg" width="150" height="100">
+            <br>
+            <input type="radio" id="agua" name="bebidas" />
+            <label for="agua">Àgua</label>
+            <br>
+            <img src="agua.jpg" width="100" height="150" >
+            <br>
+        </fieldset>
+        <p>
+            <label for="info">Informações Adicionais</label>
+            <textarea id="info"></textarea>
+        </p>
+        <p>
+            <label for="cidade">Informe a cidade</label>
+            <select id="cidade">
+                <option>Jaguariuna</option>
+                <option>Amparo</option>
+                <option>Pirassununga</option>
+                <option>Monte Alegre do Sul</option>
+                <option>Mostarda</option>
+                <option>Hortolândia</option>
+                <option>Campinas</option>
+                <option>Itapira</option>
+                <option>Holambra</option>
+            </select>
+        </p>
+        <p>
+            <input type="reset" value="limpar form" />
+            <button onclick="enviar()">Enviar</button>
+        <script>
+            function enviar() {
+                alert("Dados enviados com sucesso")
+            }
+        </script>
+        </p>
+    </form>
+</body>
+</html>

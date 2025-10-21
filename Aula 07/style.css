@@ -1,0 +1,199 @@
+.capa{
+    width: 200px;
+    height: 250px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #02023cd8;
+}
+
+header {
+    background: #050291;
+    color: #4c52ff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a{
+    color: #5c5cdeaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: rgb(196, 199, 236);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px #4a57a1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#Sobre {
+  background-image: url('Fundo\ 3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+}
+
+#Sinopse {
+  background-image: url('Fundo\ 3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+}
+
+#card {
+  background-image: url('Fundo\ 3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+}
+
+#Elenco {
+  background-image: url('Fundo\ 3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+}
+
+#Perfis {
+  background-image: url('Fundo\ 3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+}
+
+#Trechos {
+  background-image: url('Fundo\ 3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+}
+
+.container{
+    max-width: 800px;
+    margin:  0 auto;
+}
+
+.sobre-filme {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sobre-informações {
+    flex: 1;
+}
+
+.sobre-informações h2 {
+    margin-bottom: 0.5rem;
+}
+
+.sobre-informações p{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    overflow-x: scroll;
+}
+
+.card {
+    min-width: 150px;
+    width: 100px !important;
+    background: #484886;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: space-around;
+    background: linear-gradient(to top, #7483f9, #010a69);
+}
+.card h3 {
+ text-align: center;
+ font-size: 15px;
+}   
+.card h3{
+ text-align: center;
+ font-size: 15px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(0,0,0,0.1);
+}
+
+.card i{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.cards::-webkit-scrollbar {
+  width: 16px;
+}
+
+.cards::-webkit-scrollbar-track {
+  background-color: #afbeff;
+  border-radius: 100px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 100px;
+}
+
+h3{
+    color: #000000;
+}
+
+    @keyframes piscar {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    nav ul li a {
+      animation: piscar 1s infinite;
+    }
